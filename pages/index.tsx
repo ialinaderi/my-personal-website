@@ -40,7 +40,10 @@ const Home: NextPage = () => {
                         name="viewport"
                         content="initial-scale=1.0, width=device-width"
                     />
-                    <meta name="description" content={headers.homepage.description}/>
+                    <meta
+                        name="description"
+                        content={headers.homepage.description}
+                    />
                 </Head>
                 <section
                     id="intro"
@@ -183,6 +186,24 @@ const Home: NextPage = () => {
                 </Section>
                 <Section id="portfolio" title={"Portfolio"}>
                     <ul className="container-snap snap-mandatory mt-4 pb-8 px-4 w-full flex gap-4 snap-x overflow-x-auto self-center">
+                        <PortfolioCard
+                            badge="Web App - PWA"
+                            title="Memarica Invoicing App"
+                            imageSrc="/assets/memarica-invoice.jpg"
+                            url="https://memarica-invoice.vercel.app/"
+                            githubUrl="https://github.com/ialinaderi/memarica-invoice"
+                            description="The invoice-issuing web application was a great experience in PDF rendering for me.
+                            This application is able to take customer and product information from you, and convert it into a PDF file so that you can download it."
+                            icons={[
+                                "react",
+                                "typescript",
+                                "tailwind",
+                                "html",
+                                "css",
+                                "photoshop",
+                                "figma",
+                            ]}
+                        />
                         <PortfolioCard
                             badge="Web Design & Development"
                             title="Memarica Website"
